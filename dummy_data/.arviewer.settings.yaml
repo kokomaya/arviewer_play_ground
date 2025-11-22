@@ -1,0 +1,282 @@
+models:
+  - name: VIO:GPT-4o
+    apiKey: your api key
+    temperature: 0.3
+  - name: llama3.2:3B
+    apiKey: local model do not need api key
+    temperature: 0.7
+systemPrompts:
+  python专家:
+    prompt: 你是一个python专家，只回答python相关的专业的问题，其他的问题你可以选择不回答！
+fieldGroups:
+  DNGExportField:
+    - name: id
+      label: id
+      type: readonly
+      isId: true
+      isMain: false
+    - name: primaryText
+      label: Primary Text
+      type: text
+      isMain: true
+    - name: pvProjectVariants
+      label: pvProjectVariants
+      type: text
+      isMain: false
+    - name: isHeading
+      label: isHeading
+      type: readonly
+      isMain: false
+    - name: parentBinding
+      label: parentBinding
+      type: text
+      isMain: false
+    - name: module
+      label: module
+      type: readonly
+      options:
+        - Body
+        - Chassis
+        - Powertrain
+        - Infotainment
+        - ADAS
+      isMain: false
+    - name: artifactType
+      label: Artifact Type
+      type: readonly
+      isMain: false
+  ReqNetField:
+    - name: id
+      label: ID
+      type: readonly
+      isId: true
+      attachToMain: false
+    - name: contentsOriginalLanguage
+      label: Contents (original language)
+      type: text
+      isMain: true
+      attachToMain: false
+    - name: sourceReference
+      label: Source Reference
+      type: readonly
+      attachToMain: false
+    - name: artifactType
+      label: Artifact type
+      type: readonly
+      attachToMain: false
+    - name: requesterID
+      label: Requester ID
+      type: readonly
+      attachToMain: false
+    - name: requesterReference
+      label: Requester Reference
+      type: readonly
+      attachToMain: false
+    - name: level
+      label: Level (DOORS Classic)
+      type: readonly
+      attachToMain: false
+    - name: state
+      label: State
+      type: readonly
+      options: []
+      attachToMain: false
+    - name: attachments
+      label: Attachments
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+  MetadataAllFields:
+    - name: id
+      label: ID
+      type: readonly
+      isId: true
+    - name: text
+      label: Text
+      type: text
+      isMain: true
+    - name: asil
+      label: ASIL
+      type: select
+      options:
+        - QM
+        - ASIL A
+        - ASIL B
+        - ASIL C
+        - ASIL D
+    - name: testedBy
+      label: Tested By
+      type: text
+    - name: comment
+      label: Comment
+      type: textarea
+  OemXXXDTCField:
+    - name: 'no'
+      label: No.序号
+      type: text
+      isId: true
+      isMain: false
+      attachToMain: false
+    - name: dtcNumber
+      label: DTC Number
+      type: text
+      isId: false
+      isMain: true
+      attachToMain: false
+    - name: dtcNaming
+      label: DTC naming
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: monitorType
+      label: Monitor Type
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: false
+    - name: dtcDetectionPowerStatus
+      label: DTC detection power status
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: false
+    - name: enableConditions
+      label: Enable Conditions
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: matureConditions
+      label: Mature Conditions
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: DematureConditions
+      label: Demature Conditions
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: repairActionProcedure
+      label: Repair Action Procedure
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: dtcSelfhealingCriteria
+      label: DTC Self-healing Criteria
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: FailureLampFlag
+      label: Failure Lamp Flag
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: false
+    - name: turnoffLampCurrentIgnitionCycle
+      label: TurnOff Lamp Current Ignition Cycle If Malfuction Recovered
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: false
+    - name: systemActions
+      label: System Actions
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: degration
+      label: Degradtion
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+  OemXXXDTCField-test:
+    - name: no.序号
+      label: No.序号
+      type: text
+      isId: true
+      isMain: false
+    - name: dTCNumber
+      label: DTC Number
+      type: text
+      isId: false
+      isMain: true
+    - name: dTCNaming
+      label: DTC naming
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: monitorType
+      label: Monitor Type
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: false
+    - name: dTCDetectionPowerStatus
+      label: DTC detection power status
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: enableCondition
+      label: Enable Condition
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: matureConditions
+      label: Mature Conditions
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: dematureConditions
+      label: Demature Conditions
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: repairActionProcedure
+      label: Repair Action Procedure
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: dTCSelfHealingCriteria
+      label: DTC Self-healing Criteria
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: failureLampFlag
+      label: Failure Lamp Flag
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: false
+    - name: turnOffLampCurrentIgnitionCycleIfMalfuctionRecovered
+      label: TurnOff Lamp Current Ignition Cycle If Malfuction Recovered
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: false
+    - name: systemActions
+      label: System Actions
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+    - name: degradtion
+      label: Degradtion
+      type: text
+      isId: false
+      isMain: false
+      attachToMain: true
+systemPrompt: ''

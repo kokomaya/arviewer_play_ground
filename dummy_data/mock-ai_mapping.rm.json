@@ -1,0 +1,65 @@
+{
+  "originalRequirements": [
+    {
+      "id": "REQ-001",
+      "number": 1,
+      "text": "用户登录功能：系统应允许用户通过输入用户名和密码登录系统，验证通过后进入主界面。",
+      "lineStart": 2,
+      "lineEnd": 4,
+      "filePath": "original-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "childIds": [
+        "REQ-001-1",
+        "REQ-001-2",
+        "REQ-001-3"
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "number": 2,
+      "text": "在整车启动后3s内，系统本不应该报通信相关的故障，包括超时，通讯丢失，busoff等。",
+      "lineStart": 6,
+      "lineEnd": 8,
+      "filePath": "original-requirements.md",
+      "color": "#4ECDC4",
+      "isActive": true,
+      "childIds": []
+    }
+  ],
+  "decomposedRequirements": [
+    {
+      "id": "REQ-001-1",
+      "number": 1,
+      "text": "系统应提供登录界面，包含用户名和密码输入框。",
+      "lineStart": 2,
+      "lineEnd": 3,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": false,
+      "childIds": []
+    },
+    {
+      "id": "REQ-001-2",
+      "number": 2,
+      "text": "系统应验证用户输入的凭证是否正确，并在失败时提示错误。",
+      "lineStart": 5,
+      "lineEnd": 6,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-001-3",
+      "number": 3,
+      "text": "登录成功后，系统应自动跳转至主界面。",
+      "lineStart": 8,
+      "lineEnd": 9,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "childIds": []
+    }
+  ]
+}

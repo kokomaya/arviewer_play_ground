@@ -1,0 +1,27 @@
+{
+  "originalRequirements": [
+    {
+      "id": "REQ-001",
+      "number": 1,
+      "text": "在总线处于BUSOFF时，系统不应该报通信相关故障，只应该记录BUSOFF故障；当BUSOFF恢复后，应该正常记录通信故障。",
+      "lineStart": 2,
+      "lineEnd": 4,
+      "filePath": "original-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-002",
+      "number": 2,
+      "text": "在整车启动后3s内，系统本不应该报通信相关的故障，包括超时，通讯丢失，busoff等。",
+      "lineStart": 6,
+      "lineEnd": 8,
+      "filePath": "original-requirements.md",
+      "color": "#4ECDC4",
+      "isActive": true,
+      "childIds": []
+    }
+  ],
+  "decomposedRequirements": []
+}

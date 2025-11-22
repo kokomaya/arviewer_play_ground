@@ -1,0 +1,618 @@
+{
+  "originalRequirements": [
+    {
+      "id": "REQ-003",
+      "number": 3,
+      "text": "密码重置功能：系统应允许用户在忘记密码时，通过邮箱或手机验证码重置密码。",
+      "lineStart": 10,
+      "lineEnd": 12,
+      "filePath": "original-requirements.md",
+      "color": "#FFD93D",
+      "isActive": true,
+      "childIds": [
+        "REQ-003-1",
+        "REQ-003-2",
+        "REQ-003-3"
+      ]
+    },
+    {
+      "id": "REQ-004",
+      "number": 4,
+      "text": "用户权限管理：系统应根据用户角色分配不同操作权限。",
+      "lineStart": 14,
+      "lineEnd": 16,
+      "filePath": "original-requirements.md",
+      "color": "#6BCB77",
+      "isActive": true,
+      "childIds": [
+        "REQ-004-1",
+        "REQ-004-2"
+      ]
+    },
+    {
+      "id": "REQ-005",
+      "number": 5,
+      "text": "实时通知功能：系统应在有新消息或事件时，实时向用户推送通知。",
+      "lineStart": 18,
+      "lineEnd": 20,
+      "filePath": "original-requirements.md",
+      "color": "#4D96FF",
+      "isActive": true,
+      "childIds": [
+        "REQ-005-1",
+        "REQ-005-2"
+      ]
+    },
+    {
+      "id": "REQ-006",
+      "number": 6,
+      "text": "数据搜索功能：系统应提供数据搜索接口，支持关键字和高级条件搜索。",
+      "lineStart": 22,
+      "lineEnd": 24,
+      "filePath": "original-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "childIds": [
+        "REQ-006-1",
+        "REQ-006-2",
+        "REQ-006-3"
+      ]
+    },
+    {
+      "id": "REQ-007",
+      "number": 7,
+      "text": "多语言支持：系统应根据用户选择切换界面语言。",
+      "lineStart": 26,
+      "lineEnd": 28,
+      "filePath": "original-requirements.md",
+      "color": "#9D4EDD",
+      "isActive": true,
+      "childIds": [
+        "REQ-007-1",
+        "REQ-007-2"
+      ]
+    },
+    {
+      "id": "REQ-008",
+      "number": 8,
+      "text": "文件上传功能：系统应允许用户上传文件，并对文件类型和大小进行校验。",
+      "lineStart": 34,
+      "lineEnd": 36,
+      "filePath": "original-requirements.md",
+      "color": "#FF7F50",
+      "isActive": true,
+      "childIds": [
+        "REQ-008-1",
+        "REQ-008-2",
+        "REQ-008-3"
+      ]
+    },
+    {
+      "id": "REQ-009",
+      "number": 9,
+      "text": "文件下载功能：系统应允许用户下载已上传或生成的文件，并记录下载日志。",
+      "lineStart": 38,
+      "lineEnd": 40,
+      "filePath": "original-requirements.md",
+      "color": "#20B2AA",
+      "isActive": true,
+      "childIds": [
+        "REQ-009-1",
+        "REQ-009-2"
+      ]
+    },
+    {
+      "id": "REQ-010",
+      "number": 10,
+      "text": "报表生成功能：系统应根据条件生成报表，支持多种格式输出。",
+      "lineStart": 42,
+      "lineEnd": 44,
+      "filePath": "original-requirements.md",
+      "color": "#FFB347",
+      "isActive": true,
+      "childIds": [
+        "REQ-010-1",
+        "REQ-010-2",
+        "REQ-010-3"
+      ]
+    },
+    {
+      "id": "REQ-011",
+      "number": 11,
+      "text": "日志管理功能：系统应记录用户操作日志，支持按时间和操作类型查询。",
+      "lineStart": 46,
+      "lineEnd": 48,
+      "filePath": "original-requirements.md",
+      "color": "#6A5ACD",
+      "isActive": true,
+      "childIds": [
+        "REQ-011-1",
+        "REQ-011-2"
+      ]
+    },
+    {
+      "id": "REQ-012",
+      "number": 12,
+      "text": "用户在线状态：系统应实时显示用户在线或离线状态，并可设置隐身模式。",
+      "lineStart": 50,
+      "lineEnd": 52,
+      "filePath": "original-requirements.md",
+      "color": "#FF6F61",
+      "isActive": true,
+      "childIds": [
+        "REQ-012-1",
+        "REQ-012-2"
+      ]
+    },
+    {
+      "id": "REQ-013",
+      "number": 13,
+      "text": "消息发送功能：系统应支持用户发送文本、图片或文件消息，并显示发送状态。",
+      "lineStart": 54,
+      "lineEnd": 56,
+      "filePath": "original-requirements.md",
+      "color": "#3CB371",
+      "isActive": true,
+      "childIds": [
+        "REQ-013-1",
+        "REQ-013-2",
+        "REQ-013-3"
+      ]
+    },
+    {
+      "id": "REQ-014",
+      "number": 14,
+      "text": "批量操作功能：系统应允许用户对选中数据进行批量删除、导出或修改操作。",
+      "lineStart": 58,
+      "lineEnd": 60,
+      "filePath": "original-requirements.md",
+      "color": "#FF69B4",
+      "isActive": true,
+      "childIds": [
+        "REQ-014-1",
+        "REQ-014-2"
+      ]
+    },
+    {
+      "id": "REQ-015",
+      "number": 15,
+      "text": "报错提示功能：系统应在出现错误时提供详细提示，帮助用户快速定位问题。",
+      "lineStart": 62,
+      "lineEnd": 64,
+      "filePath": "original-requirements.md",
+      "color": "#1E90FF",
+      "isActive": true,
+      "childIds": [
+        "REQ-015-1",
+        "REQ-015-2"
+      ]
+    },
+    {
+      "id": "REQ-016",
+      "number": 16,
+      "text": "多终端同步：系统应支持用户在不同设备间数据同步，保证数据一致性。",
+      "lineStart": 66,
+      "lineEnd": 68,
+      "filePath": "original-requirements.md",
+      "color": "#FF8C00",
+      "isActive": true,
+      "childIds": [
+        "REQ-016-1",
+        "REQ-016-2"
+      ]
+    },
+    {
+      "id": "REQ-017",
+      "number": 17,
+      "text": "系统设置功能：系统应提供用户偏好设置，包括主题、语言、通知等配置项。",
+      "lineStart": 70,
+      "lineEnd": 72,
+      "filePath": "original-requirements.md",
+      "color": "#8A2BE2",
+      "isActive": true,
+      "childIds": [
+        "REQ-017-1",
+        "REQ-017-2",
+        "REQ-017-3"
+      ]
+    }
+  ],
+  "decomposedRequirements": [
+    {
+      "id": "REQ-003-1",
+      "number": 6,
+      "text": "系统应提供密码重置入口，并允许用户选择邮箱或手机验证方式。",
+      "lineStart": 10,
+      "lineEnd": 11,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FFD93D",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-003-2",
+      "number": 7,
+      "text": "系统应发送验证码至用户选择的邮箱或手机，并验证用户输入的验证码。",
+      "lineStart": 12,
+      "lineEnd": 13,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FFD93D",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-003-3",
+      "number": 8,
+      "text": "验证通过后，系统应允许用户设置新密码并生效。",
+      "lineStart": 14,
+      "lineEnd": 15,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FFD93D",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-004-1",
+      "number": 9,
+      "text": "系统应提供管理界面，用于为不同角色分配权限。",
+      "lineStart": 16,
+      "lineEnd": 17,
+      "filePath": "decomposed-requirements.md",
+      "color": "#6BCB77",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-004-2",
+      "number": 10,
+      "text": "系统应根据用户角色限制其可访问的功能和数据。",
+      "lineStart": 18,
+      "lineEnd": 19,
+      "filePath": "decomposed-requirements.md",
+      "color": "#6BCB77",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-005-1",
+      "number": 11,
+      "text": "系统应实时监听新消息或事件，并触发通知。",
+      "lineStart": 20,
+      "lineEnd": 21,
+      "filePath": "decomposed-requirements.md",
+      "color": "#4D96FF",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-005-2",
+      "number": 12,
+      "text": "系统应在通知界面显示消息内容，并可点击跳转至相关详情。",
+      "lineStart": 22,
+      "lineEnd": 23,
+      "filePath": "decomposed-requirements.md",
+      "color": "#4D96FF",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-006-1",
+      "number": 13,
+      "text": "系统应提供搜索输入框，支持输入关键字进行数据搜索。",
+      "lineStart": 24,
+      "lineEnd": 25,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-006-2",
+      "number": 14,
+      "text": "系统应支持高级搜索条件，如日期范围、类型筛选等。",
+      "lineStart": 26,
+      "lineEnd": 27,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-006-3",
+      "number": 15,
+      "text": "系统应显示搜索结果列表，并支持按相关性排序。",
+      "lineStart": 28,
+      "lineEnd": 29,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-007-1",
+      "number": 16,
+      "text": "系统应提供语言选择菜单，允许用户选择界面语言。",
+      "lineStart": 30,
+      "lineEnd": 31,
+      "filePath": "decomposed-requirements.md",
+      "color": "#9D4EDD",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-007-2",
+      "number": 17,
+      "text": "系统应根据用户选择自动切换界面文本和提示信息的语言。",
+      "lineStart": 32,
+      "lineEnd": 33,
+      "filePath": "decomposed-requirements.md",
+      "color": "#9D4EDD",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-008-1",
+      "number": 18,
+      "text": "系统应提供文件上传入口，并显示允许上传的文件类型和大小限制。",
+      "lineStart": 34,
+      "lineEnd": 35,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF7F50",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-008-2",
+      "number": 19,
+      "text": "系统应在上传前验证文件类型和大小是否符合要求。",
+      "lineStart": 36,
+      "lineEnd": 37,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF7F50",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-008-3",
+      "number": 20,
+      "text": "上传成功后，系统应提示用户上传完成，并显示文件信息。",
+      "lineStart": 38,
+      "lineEnd": 39,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF7F50",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-009-1",
+      "number": 21,
+      "text": "系统应提供文件下载入口，并记录下载日志。",
+      "lineStart": 40,
+      "lineEnd": 41,
+      "filePath": "decomposed-requirements.md",
+      "color": "#20B2AA",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-009-2",
+      "number": 22,
+      "text": "系统应在用户下载文件后更新日志，记录下载时间和用户信息。",
+      "lineStart": 42,
+      "lineEnd": 43,
+      "filePath": "decomposed-requirements.md",
+      "color": "#20B2AA",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-010-1",
+      "number": 23,
+      "text": "系统应提供报表生成界面，允许用户选择条件和报表类型。",
+      "lineStart": 44,
+      "lineEnd": 45,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FFB347",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-010-2",
+      "number": 24,
+      "text": "系统应根据条件生成报表，并支持导出为 PDF、Excel 等格式。",
+      "lineStart": 46,
+      "lineEnd": 47,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FFB347",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-010-3",
+      "number": 25,
+      "text": "生成报表完成后，系统应提示用户并显示报表预览。",
+      "lineStart": 48,
+      "lineEnd": 49,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FFB347",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-011-1",
+      "number": 26,
+      "text": "系统应记录用户操作日志，包括操作类型、时间和操作对象。",
+      "lineStart": 50,
+      "lineEnd": 51,
+      "filePath": "decomposed-requirements.md",
+      "color": "#6A5ACD",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-011-2",
+      "number": 27,
+      "text": "系统应提供日志查询功能，支持按时间、操作类型等条件筛选。",
+      "lineStart": 52,
+      "lineEnd": 53,
+      "filePath": "decomposed-requirements.md",
+      "color": "#6A5ACD",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-012-1",
+      "number": 28,
+      "text": "系统应显示用户在线或离线状态，并随时更新状态。",
+      "lineStart": 54,
+      "lineEnd": 55,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6F61",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-012-2",
+      "number": 29,
+      "text": "系统应允许用户设置隐身模式，隐藏在线状态。",
+      "lineStart": 56,
+      "lineEnd": 57,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6F61",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-013-1",
+      "number": 30,
+      "text": "系统应提供消息输入界面，允许发送文本、图片或文件。",
+      "lineStart": 58,
+      "lineEnd": 59,
+      "filePath": "decomposed-requirements.md",
+      "color": "#3CB371",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-013-2",
+      "number": 31,
+      "text": "系统应显示消息发送状态，如发送中、已发送、发送失败。",
+      "lineStart": 60,
+      "lineEnd": 61,
+      "filePath": "decomposed-requirements.md",
+      "color": "#3CB371",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-013-3",
+      "number": 32,
+      "text": "系统应在接收方界面实时显示消息，并支持通知提醒。",
+      "lineStart": 62,
+      "lineEnd": 63,
+      "filePath": "decomposed-requirements.md",
+      "color": "#3CB371",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-014-1",
+      "number": 33,
+      "text": "系统应允许用户选中多条数据进行批量操作。",
+      "lineStart": 64,
+      "lineEnd": 65,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF69B4",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-014-2",
+      "number": 34,
+      "text": "系统应在批量操作前进行确认，并提示可能影响的数据条数。",
+      "lineStart": 66,
+      "lineEnd": 67,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF69B4",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-015-1",
+      "number": 35,
+      "text": "系统应在操作错误时弹出详细提示，包括错误原因和解决方案。",
+      "lineStart": 68,
+      "lineEnd": 69,
+      "filePath": "decomposed-requirements.md",
+      "color": "#1E90FF",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-015-2",
+      "number": 36,
+      "text": "系统应记录错误日志，方便开发人员排查问题。",
+      "lineStart": 70,
+      "lineEnd": 71,
+      "filePath": "decomposed-requirements.md",
+      "color": "#1E90FF",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-016-1",
+      "number": 37,
+      "text": "系统应在用户多终端登录时，自动同步数据，保持一致性。",
+      "lineStart": 72,
+      "lineEnd": 73,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF8C00",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-016-2",
+      "number": 38,
+      "text": "系统应提供数据冲突处理机制，确保用户操作不丢失。",
+      "lineStart": 74,
+      "lineEnd": 75,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF8C00",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-017-1",
+      "number": 39,
+      "text": "系统应提供设置界面，允许用户配置主题、语言和通知选项。",
+      "lineStart": 76,
+      "lineEnd": 77,
+      "filePath": "decomposed-requirements.md",
+      "color": "#8A2BE2",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-017-2",
+      "number": 40,
+      "text": "系统应保存用户设置，并在下次登录时生效。",
+      "lineStart": 78,
+      "lineEnd": 79,
+      "filePath": "decomposed-requirements.md",
+      "color": "#8A2BE2",
+      "isActive": true,
+      "childIds": []
+    },
+    {
+      "id": "REQ-017-3",
+      "number": 41,
+      "text": "系统应在设置修改后立即应用，并提示用户保存成功。",
+      "lineStart": 80,
+      "lineEnd": 81,
+      "filePath": "decomposed-requirements.md",
+      "color": "#8A2BE2",
+      "isActive": true,
+      "childIds": []
+    }
+  ]
+}

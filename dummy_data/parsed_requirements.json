@@ -1,0 +1,196 @@
+[{
+
+  "originalRequirements": [
+    {
+      "id": "req-001",
+      "number": 1,
+      "text": "用户认证功能 - 系统应提供完整的用户认证功能，包括用户注册、登录、登出和密码重置。",
+      "lineStart": 4,
+      "lineEnd": 5,
+      "filePath": "original-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "mappings": ["req-001-1", "req-001-2", "req-001-3", "req-001-4"]
+    },
+    {
+      "id": "req-002",
+      "number": 2,
+      "text": "用户资料管理 - 系统应允许用户管理个人资料信息，包括基本信息维护、头像设置、偏好设置等功能。",
+      "lineStart": 7,
+      "lineEnd": 8,
+      "filePath": "original-requirements.md",
+      "color": "#4ECDC4",
+      "isActive": true,
+      "mappings": ["req-002-1", "req-002-2", "req-002-3"]
+    },
+    {
+      "id": "req-003",
+      "number": 3,
+      "text": "权限控制系统 - 系统需要实现基于角色的权限控制，不同角色的用户应具有不同的系统访问权限。",
+      "lineStart": 10,
+      "lineEnd": 11,
+      "filePath": "original-requirements.md",
+      "color": "#45B7D1",
+      "isActive": true,
+      "mappings": ["req-003-1", "req-003-2", "req-003-3"]
+    },
+    {
+      "id": "req-004",
+      "number": 4,
+      "text": "数据统计与报表 - 系统应提供数据统计和报表生成功能，支持用户行为分析、系统使用情况统计。",
+      "lineStart": 13,
+      "lineEnd": 14,
+      "filePath": "original-requirements.md",
+      "color": "#96CEB4",
+      "isActive": false,
+      "mappings": ["req-004-1", "req-004-2", "req-004-3"]
+    }
+  ],
+  "decomposedRequirements": [
+    {
+      "id": "req-001-1",
+      "number": 1,
+      "text": "用户注册功能 - 提供用户注册界面，包含用户名、邮箱、密码等必填字段",
+      "lineStart": 6,
+      "lineEnd": 10,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "mappings": ["req-001"]
+    },
+    {
+      "id": "req-001-2",
+      "number": 2,
+      "text": "用户登录功能 - 提供用户名/邮箱和密码登录方式，支持记住我功能",
+      "lineStart": 12,
+      "lineEnd": 16,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "mappings": ["req-001"]
+    },
+    {
+      "id": "req-001-3",
+      "number": 3,
+      "text": "密码管理功能 - 提供忘记密码功能，通过邮箱重置密码",
+      "lineStart": 18,
+      "lineEnd": 22,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "mappings": ["req-001"]
+    },
+    {
+      "id": "req-001-4",
+      "number": 4,
+      "text": "会话管理功能 - 用户可安全登出，清除会话信息，会话超时自动登出",
+      "lineStart": 24,
+      "lineEnd": 28,
+      "filePath": "decomposed-requirements.md",
+      "color": "#FF6B6B",
+      "isActive": true,
+      "mappings": ["req-001"]
+    },
+    {
+      "id": "req-002-1",
+      "number": 5,
+      "text": "基本信息管理 - 用户可编辑个人基本信息：姓名、电话、地址等",
+      "lineStart": 33,
+      "lineEnd": 36,
+      "filePath": "decomposed-requirements.md",
+      "color": "#4ECDC4",
+      "isActive": true,
+      "mappings": ["req-002"]
+    },
+    {
+      "id": "req-002-2",
+      "number": 6,
+      "text": "头像管理功能 - 支持上传、裁剪、设置个人头像，支持多种图片格式",
+      "lineStart": 38,
+      "lineEnd": 42,
+      "filePath": "decomposed-requirements.md",
+      "color": "#4ECDC4",
+      "isActive": true,
+      "mappings": ["req-002"]
+    },
+    {
+      "id": "req-002-3",
+      "number": 7,
+      "text": "偏好设置 - 用户可设置界面主题，通知偏好，语言和时区设置",
+      "lineStart": 44,
+      "lineEnd": 48,
+      "filePath": "decomposed-requirements.md",
+      "color": "#4ECDC4",
+      "isActive": false,
+      "mappings": ["req-002"]
+    },
+    {
+      "id": "req-003-1",
+      "number": 8,
+      "text": "角色管理 - 系统预定义角色：超级管理员、管理员、普通用户、访客",
+      "lineStart": 53,
+      "lineEnd": 57,
+      "filePath": "decomposed-requirements.md",
+      "color": "#45B7D1",
+      "isActive": true,
+      "mappings": ["req-003"]
+    },
+    {
+      "id": "req-003-2",
+      "number": 9,
+      "text": "权限分配 - 基于资源的权限控制模型，细粒度权限控制",
+      "lineStart": 59,
+      "lineEnd": 63,
+      "filePath": "decomposed-requirements.md",
+      "color": "#45B7D1",
+      "isActive": true,
+      "mappings": ["req-003"]
+    },
+    {
+      "id": "req-003-3",
+      "number": 10,
+      "text": "访问控制 - 接口级别权限验证，页面访问权限控制",
+      "lineStart": 65,
+      "lineEnd": 69,
+      "filePath": "decomposed-requirements.md",
+      "color": "#45B7D1",
+      "isActive": true,
+      "mappings": ["req-003"]
+    },
+    {
+      "id": "req-004-1",
+      "number": 11,
+      "text": "用户行为分析 - 用户活跃度统计：日活、月活用户，功能使用频率分析",
+      "lineStart": 74,
+      "lineEnd": 78,
+      "filePath": "decomposed-requirements.md",
+      "color": "#96CEB4",
+      "isActive": false,
+      "mappings": ["req-004"]
+    },
+    {
+      "id": "req-004-2",
+      "number": 12,
+      "text": "系统使用统计 - 系统负载监控，功能模块使用统计，性能指标收集",
+      "lineStart": 80,
+      "lineEnd": 84,
+      "filePath": "decomposed-requirements.md",
+      "color": "#96CEB4",
+      "isActive": false,
+      "mappings": ["req-004"]
+    },
+    {
+      "id": "req-004-3",
+      "number": 13,
+      "text": "报表生成 - 支持生成PDF、Excel、CSV格式报表，自定义报表时间段",
+      "lineStart": 86,
+      "lineEnd": 90,
+      "filePath": "decomposed-requirements.md",
+      "color": "#96CEB4",
+      "isActive": false,
+      "mappings": ["req-004"]
+    }
+  ],
+  "colorPalette": ["#FF6B6B", "#4ECDC4", "#45B7D1", "#96CEB4", "#FECA57", "#FF9FF3"]
+}
+]
