@@ -3,7 +3,7 @@
     {
       "id": "REQ-001",
       "number": 1,
-      "text": "用户登录功能：系统应允许用户通过输入用户名和密码登录系统，验证通过后进入主界面。",
+      "text": "用户登录功能：系统应允许用户通过输入用户名和密码登录系统，验证通过后进入主界面。test",
       "lineStart": 2,
       "lineEnd": 4,
       "filePath": "original-requirements.md",
@@ -61,5 +61,7 @@
       "isActive": true,
       "childIds": []
     }
-  ]
+  ],
+  "showActiveOnly": false,
+  "showWithMappingsOnly": false
 }
